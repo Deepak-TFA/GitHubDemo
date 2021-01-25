@@ -19,8 +19,7 @@ public void setUp()
 
 @Test
 public void googleTest() throws InterruptedException
-{
-	
+{	
 	driver.get("http://google.com");
 	driver.findElement(By.xpath("//input[@title='Search']")).sendKeys("GitHub Wiki");
 	Thread.sleep(5000);
