@@ -21,9 +21,17 @@ public void setUp()
 public void googleTest() throws InterruptedException
 {	
 	//Test method
-
 	driver.get("http://google.com");
 	driver.findElement(By.xpath("//input[@title='Search']")).sendKeys("GitHub Wiki");
+	Thread.sleep(5000);
+}
+
+@Test
+public void GmailTest() throws InterruptedException
+{	
+	//Test method
+	driver.get("http://gmail.com");
+	driver.findElement(By.id("identifierId")).sendKeys("Gmail User");
 	Thread.sleep(5000);
 }
 
