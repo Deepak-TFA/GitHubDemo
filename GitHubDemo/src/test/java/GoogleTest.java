@@ -29,7 +29,6 @@ public void googleTest() throws InterruptedException
 @Test
 public void GmailTest() throws InterruptedException
 {	
-	//Test wehook1111
 	driver.get("http://gmail.com");
 	driver.findElement(By.id("identifierId")).sendKeys("Gmail User");
 	Thread.sleep(5000);
